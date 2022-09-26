@@ -1,6 +1,7 @@
 package de.leghast.tutorialmod.item;
 
 import de.leghast.tutorialmod.TutorialMod;
+import de.leghast.tutorialmod.item.custom.DowsingRodItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(16)));
 
     private static Item registerItem(String name, Item item)
     {

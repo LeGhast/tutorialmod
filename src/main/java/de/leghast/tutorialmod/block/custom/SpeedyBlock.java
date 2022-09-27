@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class SpeedyBlock extends Block {
+
     public SpeedyBlock(Settings settings) {
         super(settings);
     }
@@ -23,9 +24,7 @@ public class SpeedyBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos,
                               PlayerEntity player, Hand hand, BlockHitResult hit) {
-        // Called 4 time on right click:
-        // 2 Times on the Server (for each Hand)
-        // 2 Times on the Client (for each Hand)
+
         if(world.isClient()) {
             if(hand == Hand.MAIN_HAND) {
                 player.sendMessage(new LiteralText("CLIENT: This is THE CLIENT! MAIN HAND!"), false);
@@ -34,7 +33,7 @@ public class SpeedyBlock extends Block {
             }
         }
 
-        return ActionResult.PASS;
+        return ActionResult.SUCCESS;
     }
 
     @Override

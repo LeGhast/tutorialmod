@@ -2,6 +2,7 @@ package de.leghast.tutorialmod;
 
 import de.leghast.tutorialmod.block.ModBlocks;
 import de.leghast.tutorialmod.item.ModItems;
+import de.leghast.tutorialmod.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModRegistries.registerModStuffs();
 
 	}
 }

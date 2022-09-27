@@ -18,5 +18,9 @@
   "itemGroup.tutorialmod.mythril": "Mythril",
 
 
-  "item.tutorialmod.dowsing_rod.no_valuables": "No valuable blocks were found"
+  "item.tutorialmod.dowsing_rod.no_valuables": "No valuable blocks were found",
+  "item.tutorialmod.dowsing_rod.tooltip": "Press §eSHIFT§r to get more information",
+  "item.tutorialmod.dowsing_rod.tooltip.shift": "Right click to find valuable blocks",
+
+  "tooltip.tutorialmod.mythril_block": "A magical block"
 }
